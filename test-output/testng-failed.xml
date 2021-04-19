@@ -5,14 +5,8 @@
     <classes>
       <class name="AppiumTest.Demo">
         <methods>
-          <include name="loginWithUppercaseUsername"/>
-          <include name="loginSuccess"/>
-          <include name="loginWithIncorrectPassword"/>
-          <include name="loginWithUppercasPassword"/>
           <include name="assertUsernameAndPasswordField"/>
           <include name="setUp"/>
-          <include name="loginWithSpecialCharacter"/>
-          <include name="loginWithIncorrectUsername"/>
         </methods>
       </class> <!-- AppiumTest.Demo -->
     </classes>
