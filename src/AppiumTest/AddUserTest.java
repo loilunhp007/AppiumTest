@@ -23,7 +23,7 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.touch.offset.PointOption;
 
-public class AdminTest {
+public class AddUserTest {
 	AppiumDriver driver=null;
 	@BeforeMethod()
 	public void setUp() throws MalformedURLException, InterruptedException {
