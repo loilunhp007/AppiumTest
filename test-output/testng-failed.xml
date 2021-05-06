@@ -3,18 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AppiumTest.Demo">
+      <class name="AppiumTest.AdminTest">
         <methods>
-          <include name="loginWithUppercaseUsername"/>
-          <include name="loginSuccess"/>
-          <include name="loginWithIncorrectPassword"/>
-          <include name="loginWithUppercasPassword"/>
-          <include name="assertUsernameAndPasswordField"/>
           <include name="setUp"/>
-          <include name="loginWithSpecialCharacter"/>
-          <include name="loginWithIncorrectUsername"/>
+          <include name="tearDown"/>
+          <include name="AddUserSuccess"/>
         </methods>
-      </class> <!-- AppiumTest.Demo -->
+      </class> <!-- AppiumTest.AdminTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
