@@ -1,121 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-06T16:51:21 ICT" name="Default suite" finished-at="2021-05-06T16:58:51 ICT" duration-ms="449994">
+  <suite started-at="2021-05-07T15:16:06 ICT" name="Default suite" finished-at="2021-05-07T15:16:39 ICT" duration-ms="33580">
     <groups>
     </groups>
-    <test started-at="2021-05-06T16:51:21 ICT" name="Default test" finished-at="2021-05-06T16:58:51 ICT" duration-ms="449994">
-      <class name="AppiumTest.AdminTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:51:21 ICT" name="setUp" finished-at="2021-05-06T16:51:55 ICT" duration-ms="34023" status="PASS">
+    <test started-at="2021-05-07T15:16:06 ICT" name="Default test" finished-at="2021-05-07T15:16:39 ICT" duration-ms="33580">
+      <class name="AppiumTest.DeleteTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AppiumTest.DeleteTest@7e0b85f9]" started-at="2021-05-07T15:16:06 ICT" name="setUp" finished-at="2021-05-07T15:16:32 ICT" duration-ms="26389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkAdminUserPage()[pri:1, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:51:55 ICT" name="checkAdminUserPage" finished-at="2021-05-06T16:52:00 ICT" duration-ms="4632" status="PASS">
+        <test-method signature="deleteUser()[pri:0, instance:AppiumTest.DeleteTest@7e0b85f9]" started-at="2021-05-07T15:16:32 ICT" name="deleteUser" finished-at="2021-05-07T15:16:39 ICT" duration-ms="6835" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkAdminUserPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:52:00 ICT" name="tearDown" finished-at="2021-05-06T16:52:00 ICT" duration-ms="305" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:52:00 ICT" name="setUp" finished-at="2021-05-06T16:52:28 ICT" duration-ms="27532" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="AddUserSuccess()[pri:2, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:52:28 ICT" name="AddUserSuccess" finished-at="2021-05-06T16:52:49 ICT" duration-ms="21389" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddUserSuccess -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:52:49 ICT" name="tearDown" finished-at="2021-05-06T16:52:49 ICT" duration-ms="292" status="PASS">
+        </test-method> <!-- deleteUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.DeleteTest@7e0b85f9]" started-at="2021-05-07T15:16:39 ICT" name="tearDown" finished-at="2021-05-07T15:16:39 ICT" duration-ms="308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:52:49 ICT" name="setUp" finished-at="2021-05-06T16:53:17 ICT" duration-ms="27874" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="AddUserWithNotExistEmplyee()[pri:3, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:53:17 ICT" name="AddUserWithNotExistEmplyee" finished-at="2021-05-06T16:53:41 ICT" duration-ms="23697" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddUserWithNotExistEmplyee -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:53:41 ICT" name="tearDown" finished-at="2021-05-06T16:53:41 ICT" duration-ms="344" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:53:41 ICT" name="setUp" finished-at="2021-05-06T16:54:07 ICT" duration-ms="25841" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="AddUserWithNullEmployeeName()[pri:4, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:54:07 ICT" name="AddUserWithNullEmployeeName" finished-at="2021-05-06T16:54:30 ICT" duration-ms="22879" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddUserWithNullEmployeeName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:54:30 ICT" name="tearDown" finished-at="2021-05-06T16:54:30 ICT" duration-ms="336" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:54:30 ICT" name="setUp" finished-at="2021-05-06T16:54:58 ICT" duration-ms="27330" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="AddUserWithInvalidUsername()[pri:5, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:54:58 ICT" name="AddUserWithInvalidUsername" finished-at="2021-05-06T16:55:21 ICT" duration-ms="23217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddUserWithInvalidUsername -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:55:21 ICT" name="tearDown" finished-at="2021-05-06T16:55:21 ICT" duration-ms="323" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:55:21 ICT" name="setUp" finished-at="2021-05-06T16:55:48 ICT" duration-ms="26452" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="AddUserWithNullUsername()[pri:6, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:55:48 ICT" name="AddUserWithNullUsername" finished-at="2021-05-06T16:56:13 ICT" duration-ms="25367" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddUserWithNullUsername -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:56:13 ICT" name="tearDown" finished-at="2021-05-06T16:56:13 ICT" duration-ms="330" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:56:14 ICT" name="setUp" finished-at="2021-05-06T16:56:43 ICT" duration-ms="29868" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="AddUserWithExistUsername()[pri:7, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:56:43 ICT" name="AddUserWithExistUsername" finished-at="2021-05-06T16:57:05 ICT" duration-ms="21181" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddUserWithExistUsername -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:57:05 ICT" name="tearDown" finished-at="2021-05-06T16:57:05 ICT" duration-ms="348" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:57:05 ICT" name="setUp" finished-at="2021-05-06T16:57:32 ICT" duration-ms="27414" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="AddUserWithInvalidPassword()[pri:8, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:57:32 ICT" name="AddUserWithInvalidPassword" finished-at="2021-05-06T16:57:56 ICT" duration-ms="23736" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddUserWithInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:57:56 ICT" name="tearDown" finished-at="2021-05-06T16:57:56 ICT" duration-ms="325" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:57:56 ICT" name="setUp" finished-at="2021-05-06T16:58:28 ICT" duration-ms="31403" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="AddUserWithNullPassword()[pri:9, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:58:28 ICT" name="AddUserWithNullPassword" finished-at="2021-05-06T16:58:51 ICT" duration-ms="23134" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddUserWithNullPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.AdminTest@50b472aa]" started-at="2021-05-06T16:58:51 ICT" name="tearDown" finished-at="2021-05-06T16:58:51 ICT" duration-ms="318" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- AppiumTest.AdminTest -->
+      </class> <!-- AppiumTest.DeleteTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

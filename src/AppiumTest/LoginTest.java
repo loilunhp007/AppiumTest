@@ -36,7 +36,7 @@ import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
 import utility.Constant;
 import utility.ExcelUtils;
-public class Demo {
+public class LoginTest {
 	ExcelUtils ulti;
 	int i=1;
   public AppiumDriver<MobileElement> driver;
