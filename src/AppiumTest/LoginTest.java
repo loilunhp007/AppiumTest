@@ -53,16 +53,20 @@ public class LoginTest {
 		driver = new AppiumDriver<MobileElement>(url,caps);
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 	}
-	@Test(priority = 1)
-	public void assertUsernameAndPasswordField() {
-
-		String expectedValue="input";
-		String usernameField=driver.findElement(By.xpath("//input[@id='txtUsername']")).getTagName();
-		String passwordField=driver.findElement(By.xpath("//input[@id='txtPassword']")).getTagName();
-		Assert.assertEquals(usernameField,expectedValue);
-		Assert.assertEquals(passwordField, expectedValue);
-	}
 	
+	@Test(priority = 1)
+	public void verifyLoginPage() {
+
+
+		WebElement usernameField=driver.findElement(By.xpath("//input[@id='txtUsername']"));
+		WebElement passwordField=driver.findElement(By.xpath("//input[@id='txtPassword']"));
+		WebElement button=driver.findElement(By.xpath("//*[@id=\"btnLogin\"]"));
+		WebElement logo =driver.findElement(By.xpath("//*[@id=\"divLoginImage\"]"));
+		Assert.assertTrue(usernameField.isDisplayed(),"Username Field is not displayed");
+		Assert.assertTrue(passwordField.isDisplayed(),"Password Field is not Displayed");
+		Assert.assertTrue(button.isDisplayed(),"Button is not Displayed");
+		Assert.assertTrue(logo.isDisplayed(),"Password Field is not Displayed");
+	}
 	@SuppressWarnings("deprecation")
 	@Test(priority = 2)
 	public void loginSuccess() throws InterruptedException{
@@ -107,7 +111,7 @@ public class LoginTest {
 	@Test(priority = 5)
 	public void loginWithSpecialCharacter() throws InterruptedException {
 		String expectedMessage="Invalid credentials";
-		String username=" /*Admin";
+		String username=" Admin ";
 		String password="admin123";
 		driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys(username);
 		driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys(password);
@@ -139,58 +143,32 @@ public class LoginTest {
 		Thread.sleep(3000);
 		String message = driver.findElement(By.xpath("//span[@id='spanMessage']")).getText();
 		Assert.assertEquals(message, expectedMessage);
-		
 	}
-	
-	/*@DataProvider
-	public Iterator<Object[]> getData() throws Exception {
-		ArrayList<Object[]> data = ExcelUtils.getDataFromExcel(Constant.Path_TestData, Constant.File_TestData);
-		return data.iterator();
-	}
-	
-	@Test(dataProvider = "getData")
-	public void loginTestExcel(String name,String username,String password) throws Exception {
-		driver.findElement(By.xpath("//input[@id='txtUsername']")).clear();
-		driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys(username);		
-		driver.findElement(By.xpath("//input[@id='txtPassword']")).clear();
-		driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys(password);
-		driver.getKeyboard().sendKeys(Keys.ENTER);
-		ulti.setCellData("pass", i, 3);
-		i++;
-		
-		
-	}
-	public void login1(String name,String username,String password) throws InterruptedException{
-		//check login vs URL
-		String expectedURL="https://opensource-demo.orangehrmlive.com/index.php/dashboard";
-		driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys(username);
-		driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys(password);
-		driver.getKeyboard().sendKeys(Keys.ENTER);
-		Thread.sleep(3000);
-		String URL = driver.getCurrentUrl();
-		Assert.assertEquals(URL, expectedURL);
-	}
-	public void login2(String username,String password) throws InterruptedException {
-		String expectedMessage=" Invalid credentials";
+	@Test(priority = 8)
+	public void loginWithNullUsername() throws InterruptedException {
+		String expectedMessage="Username cannot be empty";
+		String username="";
+		String password="admin123456";
 		driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys(username);
 		driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys(password);
 		driver.getKeyboard().sendKeys(Keys.ENTER);
 		Thread.sleep(3000);
 		String message = driver.findElement(By.xpath("//span[@id='spanMessage']")).getText();
 		Assert.assertEquals(message, expectedMessage);
-		
 	}
-	public void login3(String name,String username,String password) throws InterruptedException {
-		String expectedMessage="Csrf token validation failed";
+	@Test(priority = 9)
+	public void loginWithPassword() throws InterruptedException {
+		String expectedMessage="Password cannot be empty";
+		String username="Admin";
+		String password="";
 		driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys(username);
 		driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys(password);
 		driver.getKeyboard().sendKeys(Keys.ENTER);
 		Thread.sleep(3000);
 		String message = driver.findElement(By.xpath("//span[@id='spanMessage']")).getText();
 		Assert.assertEquals(message, expectedMessage);
-		
-		
-	}*/
+	}
+	
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();

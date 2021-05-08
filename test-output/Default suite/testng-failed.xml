@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AppiumTest.DeleteTest">
+      <class name="AppiumTest.LoginTest">
         <methods>
+          <include name="verifyLoginPage"/>
           <include name="tearDown"/>
+          <include name="loginWithNullUsername"/>
           <include name="setUp"/>
-          <include name="deleteUser"/>
         </methods>
-      </class> <!-- AppiumTest.DeleteTest -->
+      </class> <!-- AppiumTest.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

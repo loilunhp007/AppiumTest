@@ -1,25 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-07T15:16:06 ICT" name="Default suite" finished-at="2021-05-07T15:16:39 ICT" duration-ms="33580">
+  <suite started-at="2021-05-08T13:55:32 ICT" name="Default suite" finished-at="2021-05-08T13:58:45 ICT" duration-ms="192723">
     <groups>
     </groups>
-    <test started-at="2021-05-07T15:16:06 ICT" name="Default test" finished-at="2021-05-07T15:16:39 ICT" duration-ms="33580">
-      <class name="AppiumTest.DeleteTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AppiumTest.DeleteTest@7e0b85f9]" started-at="2021-05-07T15:16:06 ICT" name="setUp" finished-at="2021-05-07T15:16:32 ICT" duration-ms="26389" status="PASS">
+    <test started-at="2021-05-08T13:55:32 ICT" name="Default test" finished-at="2021-05-08T13:58:45 ICT" duration-ms="192723">
+      <class name="AppiumTest.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:55:32 ICT" name="setUp" finished-at="2021-05-08T13:55:52 ICT" duration-ms="19488" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="deleteUser()[pri:0, instance:AppiumTest.DeleteTest@7e0b85f9]" started-at="2021-05-07T15:16:32 ICT" name="deleteUser" finished-at="2021-05-07T15:16:39 ICT" duration-ms="6835" status="PASS">
+        <test-method signature="verifyLoginPage()[pri:1, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:55:52 ICT" name="verifyLoginPage" finished-at="2021-05-08T13:55:52 ICT" duration-ms="505" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.DeleteTest@7e0b85f9]" started-at="2021-05-07T15:16:39 ICT" name="tearDown" finished-at="2021-05-07T15:16:39 ICT" duration-ms="308" status="PASS">
+        </test-method> <!-- verifyLoginPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:55:52 ICT" name="tearDown" finished-at="2021-05-08T13:55:53 ICT" duration-ms="432" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- AppiumTest.DeleteTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:55:53 ICT" name="setUp" finished-at="2021-05-08T13:56:09 ICT" duration-ms="16464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginSuccess()[pri:2, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:56:09 ICT" name="loginSuccess" finished-at="2021-05-08T13:56:15 ICT" duration-ms="5409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSuccess -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:56:15 ICT" name="tearDown" finished-at="2021-05-08T13:56:15 ICT" duration-ms="481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:56:15 ICT" name="setUp" finished-at="2021-05-08T13:56:32 ICT" duration-ms="16643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithUppercaseUsername()[pri:3, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:56:32 ICT" name="loginWithUppercaseUsername" finished-at="2021-05-08T13:56:37 ICT" duration-ms="5255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithUppercaseUsername -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:56:37 ICT" name="tearDown" finished-at="2021-05-08T13:56:38 ICT" duration-ms="480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:56:38 ICT" name="setUp" finished-at="2021-05-08T13:56:54 ICT" duration-ms="15932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithUppercasePassword()[pri:4, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:56:54 ICT" name="loginWithUppercasePassword" finished-at="2021-05-08T13:56:58 ICT" duration-ms="4831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithUppercasePassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:56:58 ICT" name="tearDown" finished-at="2021-05-08T13:56:59 ICT" duration-ms="462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:56:59 ICT" name="setUp" finished-at="2021-05-08T13:57:15 ICT" duration-ms="16033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithSpecialCharacter()[pri:5, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:57:15 ICT" name="loginWithSpecialCharacter" finished-at="2021-05-08T13:57:20 ICT" duration-ms="4627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithSpecialCharacter -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:57:20 ICT" name="tearDown" finished-at="2021-05-08T13:57:20 ICT" duration-ms="484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:57:20 ICT" name="setUp" finished-at="2021-05-08T13:57:37 ICT" duration-ms="16612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithIncorrectUsername()[pri:6, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:57:37 ICT" name="loginWithIncorrectUsername" finished-at="2021-05-08T13:57:41 ICT" duration-ms="4709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithIncorrectUsername -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:57:41 ICT" name="tearDown" finished-at="2021-05-08T13:57:42 ICT" duration-ms="500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:57:42 ICT" name="setUp" finished-at="2021-05-08T13:57:58 ICT" duration-ms="16381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithIncorrectPassword()[pri:7, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:57:58 ICT" name="loginWithIncorrectPassword" finished-at="2021-05-08T13:58:03 ICT" duration-ms="4951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithIncorrectPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:58:03 ICT" name="tearDown" finished-at="2021-05-08T13:58:04 ICT" duration-ms="466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:58:04 ICT" name="setUp" finished-at="2021-05-08T13:58:20 ICT" duration-ms="16210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithNullUsername()[pri:8, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:58:20 ICT" name="loginWithNullUsername" finished-at="2021-05-08T13:58:24 ICT" duration-ms="3975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithNullUsername -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:58:24 ICT" name="tearDown" finished-at="2021-05-08T13:58:24 ICT" duration-ms="520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:58:24 ICT" name="setUp" finished-at="2021-05-08T13:58:41 ICT" duration-ms="16432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithPassword()[pri:9, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:58:41 ICT" name="loginWithPassword" finished-at="2021-05-08T13:58:45 ICT" duration-ms="3901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.LoginTest@1ddf84b8]" started-at="2021-05-08T13:58:45 ICT" name="tearDown" finished-at="2021-05-08T13:58:45 ICT" duration-ms="485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AppiumTest.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
